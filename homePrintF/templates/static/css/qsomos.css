@@ -1,0 +1,44 @@
+.quem-somos {
+    background: #141414;
+    color: #ffffff;
+  }
+  
+.quem-somos-container {
+    max-width: 1200px;
+    padding: 120px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+    position: relative;
+  }
+  
+.quem-somos-container::after {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 200px;
+    background: url("../img/PrintFS.svg") no-repeat center;
+    position: absolute;
+    bottom: -102px;
+    left: -12px;
+  }
+  
+.subtitulo{
+  font-size: 10rem;
+    line-height: 1;
+    text-transform: uppercase;
+    word-break: unset;
+    max-width: 1ch;
+}
+  
+.quem-somos-texto {
+    font-size: 1.5rem;
+    line-height: 1.53;
+    max-width: 40ch;
+    margin-bottom: 60px;
+    color: #1b91bf;
+    font-family: 'Anton', sans-serif;
+    margin-top: 310px;
+  }
+ 

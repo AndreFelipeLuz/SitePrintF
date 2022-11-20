@@ -1,0 +1,125 @@
+.Negocios {
+  background: #ffffff;
+  color: #141414;
+}
+.Negocios-container {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  position: relative;
+}
+s
+.Negocios-container::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 200px;
+  background: url("../img/PrintFS.svg") no-repeat center;
+  position: absolute;
+  bottom: -104px;
+  left: 20px;
+}
+
+
+
+.Negocios-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #a3a3a3;
+  font-family: 'Anton', sans-serif;
+  margin-top: 210px;
+}
+
+
+
+
+
+
+.backBottom{
+    background-image: url("../img/fundo-contato.jpg");
+    width: 100%;
+    height: 750px;
+}
+.conteinerForm{
+    max-width: 470px;
+    width: 90%;
+    margin: auto;
+    padding: 58px 0px;
+}
+.conteinerForm > h2{
+    text-align: center;
+    color:#ffffff;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    margin: 13px 0px 29px 0px;
+}
+input, #btnConteiner, #msg{
+    border: none;
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+    font-family: 'Lato', serif; 
+    font-weight: 400;
+    font-size: 18px; 
+}
+input::placeholder, textarea::placeholder{
+    padding: 0px 10px;
+    color: #6E7275BD;
+}
+.conteinerForm input, textarea{
+    height: 65px;
+    margin: 15px 0px;
+}
+textarea{
+    resize: none;
+}
+#msg{
+    height: 165px;
+    padding-top: 15px ;
+}
+#btnConteiner{
+    height: 50px;
+    background-color: #6C63FF;
+    font-family: 'Lato', serif; 
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFFFF;
+    box-shadow: -1px 8px 18px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+}
+#btnConteiner:hover{
+    background-color: #4b42f0;
+    transition: 0.5s;
+}
+@media (max-width:1010px){
+    .conteiner_one {
+        display: inline;
+        text-align: center;
+    }
+    main .one_section{
+        height: auto;
+    }
+    .one_img > img{
+        width: 70%;
+        margin: 50px 0px;
+    }
+    .tetx_btn{
+        padding: 5% 0%;
+        text-align: center;
+    }
+}
+@media (max-width:430px){
+    
+    .conteiner_one .tetx_btn h1{
+        font-size: 25px;
+    }
+    .conteiner_one .tetx_btn p{
+        font-size: 18px;  
+    }
+}
